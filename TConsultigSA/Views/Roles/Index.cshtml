@@ -1,0 +1,26 @@
+﻿@model IEnumerable<TConsultigSA.Models.Rol>
+
+<h2>Lista de Roles</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Descripción</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var rol in Model)
+        {
+            <tr>
+                <td>@rol.Descripcion</td> <!-- Cambiado de 'Nombre' a 'Descripcion' -->
+                <td>
+                    <a asp-action="Edit" asp-route-id="@rol.Id" class="btn btn-primary">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@rol.Id" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-success">Crear Nuevo Rol</a>

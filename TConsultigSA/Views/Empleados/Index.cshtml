@@ -1,0 +1,32 @@
+﻿@model IEnumerable<TConsultigSA.Models.Empleado>
+
+<h2>Lista de Empleados</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>DPI</th>
+            <th>Nombre</th>
+            <th>Fecha Contratado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var empleado in Model)
+        {
+            <tr>
+                <td>@empleado.DPI</td>
+                <td>@empleado.Nombre</td>
+                <td>@empleado.FechaContratado.ToString("dd/MM/yyyy")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@empleado.Id" class="btn btn-warning">Editar</a>
+                    <form asp-action="Delete" asp-route-id="@empleado.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este empleado?');">
+                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-success">Nuevo Empleado</a>
