@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\lucy_\Source\Repos\TConsulting\TConsultigSA
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Auth/Registro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Ryby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Empleados/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Home/Welcome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXZWxjb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Roles/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,6 +60,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Roles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Shared/Components/_DrawerNavigator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0RyYXdlck5hdmlnYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Shared/Error.cshtml]

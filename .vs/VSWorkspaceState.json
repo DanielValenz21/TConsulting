@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TConsultigSA"
   ],
-  "SelectedNode": "\\TConsultigSA.sln",
+  "SelectedNode": "\\TConsultigSA\\appsettings.Development.json",
   "PreviewInSolutionExplorer": false
 }

@@ -1,9 +1,16 @@
 ﻿@{
-    ViewData["Title"] = "Página Principal";
+    ViewData["Title"] = "Inicio";
 }
 
-<h2>Bienvenido, @User.Identity.Name</h2>
+@section DrawerSection {
+    <div class="list-group">
+        <a href="/Home/Index" class="list-group-item list-group-item-action">Inicio</a>
+        <a href="/Empleados/Index" class="list-group-item list-group-item-action">Empleados</a>
+        <a href="/Roles/Index" class="list-group-item list-group-item-action">Roles</a>
+        <a href="/Permisos/Index" class="list-group-item list-group-item-action">Permisos</a>
+        <a href="/Departamentos/Index" class="list-group-item list-group-item-action">Departamentos</a>
+    </div>
+}
 
-<p>Esta es la página principal. ¡Has iniciado sesión con éxito!</p>
-
-<a href="/Login/Logout" class="btn btn-danger">Cerrar Sesión</a>
+<h2>Inicio</h2>
+<p>Bienvenido a la página principal del sistema.</p>
