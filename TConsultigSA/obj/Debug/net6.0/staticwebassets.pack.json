@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\lucy_\\Source\\Repos\\TConsulting\\TConsultigSA\\wwwroot\\images\\default-profile.jpeg",
+      "PackagePath": "staticwebassets\\images\\default-profile.jpeg"
+    },
+    {
       "Id": "C:\\Users\\lucy_\\Source\\Repos\\TConsulting\\TConsultigSA\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

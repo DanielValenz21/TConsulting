@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\TConsultigSA"
+    "\\TConsultigSA",
+    "\\TConsultigSA\\Views",
+    "\\TConsultigSA\\Views\\Shared"
   ],
-  "SelectedNode": "\\TConsultigSA\\appsettings.Development.json",
+  "SelectedNode": "\\TConsultigSA\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

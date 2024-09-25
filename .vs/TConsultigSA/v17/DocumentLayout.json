@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\lucy_\\source\\repos\\TConsulting\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultigSA.csproj|c:\\users\\lucy_\\source\\repos\\tconsulting\\tconsultigsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultigSA.csproj|solutionrelative:tconsultigsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultigSA.csproj|c:\\users\\lucy_\\source\\repos\\tconsulting\\tconsultigsa\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultigSA.csproj|solutionrelative:tconsultigsa\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultigSA.csproj|c:\\users\\lucy_\\source\\repos\\tconsulting\\tconsultigsa\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultigSA.csproj|solutionrelative:tconsultigsa\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,8 +65,37 @@
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lucy_\\source\\repos\\TConsulting\\TConsultigSA\\appsettings.json",
+              "RelativeDocumentMoniker": "TConsultigSA\\appsettings.json",
+              "ToolTip": "C:\\Users\\lucy_\\source\\repos\\TConsulting\\TConsultigSA\\appsettings.json",
+              "RelativeToolTip": "TConsultigSA\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-24T04:01:43.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lucy_\\source\\repos\\TConsulting\\TConsultigSA\\Program.cs",
+              "RelativeDocumentMoniker": "TConsultigSA\\Program.cs",
+              "ToolTip": "C:\\Users\\lucy_\\source\\repos\\TConsulting\\TConsultigSA\\Program.cs",
+              "RelativeToolTip": "TConsultigSA\\Program.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAmwC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:29:37.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\lucy_\\source\\repos\\TConsulting\\TConsultigSA\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "TConsultigSA\\wwwroot\\css\\site.css",
@@ -66,12 +103,11 @@
               "RelativeToolTip": "TConsultigSA\\wwwroot\\css\\site.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-22T23:36:17.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T23:36:17.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\lucy_\\source\\repos\\TConsulting\\TConsultigSA\\Views\\Auth\\Login.cshtml",
               "RelativeDocumentMoniker": "TConsultigSA\\Views\\Auth\\Login.cshtml",
@@ -79,12 +115,11 @@
               "RelativeToolTip": "TConsultigSA\\Views\\Auth\\Login.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T19:19:21.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T19:19:21.137Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lucy_\\source\\repos\\TConsulting\\TConsultigSA\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "TConsultigSA\\Views\\Home\\Index.cshtml",
@@ -92,12 +127,11 @@
               "RelativeToolTip": "TConsultigSA\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T19:19:13.046Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T19:19:13.046Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\lucy_\\source\\repos\\TConsulting\\TConsultigSA\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "TConsultigSA\\Views\\Shared\\_Layout.cshtml",
@@ -105,12 +139,11 @@
               "RelativeToolTip": "TConsultigSA\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAACEAAAAAAAAAAAAAADwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T19:18:37.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T19:18:37.04Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "main.scss",
               "DocumentMoniker": "C:\\Users\\lucy_\\source\\repos\\TConsulting\\TConsultigSA\\wwwroot\\main.scss",
               "RelativeDocumentMoniker": "TConsultigSA\\wwwroot\\main.scss",
@@ -118,8 +151,7 @@
               "RelativeToolTip": "TConsultigSA\\wwwroot\\main.scss",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
-              "WhenOpened": "2024-09-22T19:17:49.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T19:17:49.071Z"
             }
           ]
         }

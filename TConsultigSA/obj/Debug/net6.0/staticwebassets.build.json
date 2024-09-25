@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Yo/eOaQLxGN1WA15cBLULyndQ6l5YZOTMUGLOCwtx3w=",
+  "Hash": "mkxANQ6qHtyWvggVsjK+gNnHn0/a62p5BFpPn97ZkxY=",
   "Source": "TConsultigSA",
   "BasePath": "_content/TConsultigSA",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\lucy_\\Source\\Repos\\TConsulting\\TConsultigSA\\wwwroot\\images\\default-profile.jpeg",
+      "SourceId": "TConsultigSA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lucy_\\Source\\Repos\\TConsulting\\TConsultigSA\\wwwroot\\",
+      "BasePath": "_content/TConsultigSA",
+      "RelativePath": "images/default-profile.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\default-profile.jpeg"
     },
     {
       "Identity": "C:\\Users\\lucy_\\Source\\Repos\\TConsulting\\TConsultigSA\\wwwroot\\js\\site.js",
