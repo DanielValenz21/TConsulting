@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucy_\\Source\\Repos\\TConsulting\\TConsultigSA\\TConsultigSA.csproj": {}
+    "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\TConsultigSA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucy_\\Source\\Repos\\TConsulting\\TConsultigSA\\TConsultigSA.csproj": {
+    "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\TConsultigSA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucy_\\Source\\Repos\\TConsulting\\TConsultigSA\\TConsultigSA.csproj",
+        "projectUniqueName": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\TConsultigSA.csproj",
         "projectName": "TConsultigSA",
-        "projectPath": "C:\\Users\\lucy_\\Source\\Repos\\TConsulting\\TConsultigSA\\TConsultigSA.csproj",
-        "packagesPath": "C:\\Users\\lucy_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucy_\\Source\\Repos\\TConsulting\\TConsultigSA\\obj\\",
+        "projectPath": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\TConsultigSA.csproj",
+        "packagesPath": "C:\\Users\\hetzo\\.nuget\\packages\\",
+        "outputPath": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lucy_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hetzo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

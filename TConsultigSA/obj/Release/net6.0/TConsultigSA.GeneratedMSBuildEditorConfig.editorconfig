@@ -9,83 +9,83 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TConsultigSA
 build_property.RootNamespace = TConsultigSA
-build_property.ProjectDir = C:\Users\lucy_\Source\Repos\TConsulting\TConsultigSA\
+build_property.ProjectDir = C:\Repositorio\ASP.net\TConsulting\TConsultigSA\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\lucy_\Source\Repos\TConsulting\TConsultigSA
+build_property.MSBuildProjectDirectory = C:\Repositorio\ASP.net\TConsulting\TConsultigSA
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Auth/Login.cshtml]
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Auth/Registro.cshtml]
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Auth/Registro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Ryby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Empleados/Create.cshtml]
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Empleados/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Empleados/Edit.cshtml]
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Empleados/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Empleados/Index.cshtml]
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Empleados/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Home/Index.cshtml]
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Home/Privacy.cshtml]
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Home/Welcome.cshtml]
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Home/Welcome.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXZWxjb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Roles/Create.cshtml]
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Roles/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Roles/Edit.cshtml]
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Roles/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Roles/Index.cshtml]
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Roles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Shared/Components/_DrawerNavigator.cshtml]
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Shared/Components/_DrawerNavigator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0RyYXdlck5hdmlnYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Shared/Error.cshtml]
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Shared/_Sidebar.cshtml]
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Shared/_Sidebar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlYmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/_ViewImports.cshtml]
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/_ViewStart.cshtml]
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucy_/Source/Repos/TConsulting/TConsultigSA/Views/Shared/_Layout.cshtml]
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1e85bgzjyc
