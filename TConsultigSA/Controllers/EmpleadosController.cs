@@ -39,10 +39,27 @@ namespace TConsultigSA.Controllers
         // Acción para manejar el POST del formulario de creación (POST)
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Empleado empleado)
+        public async Task<IActionResult> Create(Empleado empleado, IFormFileCollection Documentos)
         {
             if (ModelState.IsValid)
             {
+                // Lógica para manejar la subida de archivos PDF (si es necesario)
+                if (Documentos != null && Documentos.Count > 0)
+                {
+                    foreach (var documento in Documentos)
+                    {
+                        if (documento.Length > 0)
+                        {
+                            // Guardar los documentos en una ubicación específica
+                            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/documentos", documento.FileName);
+                            using (var stream = new FileStream(filePath, FileMode.Create))
+                            {
+                                await documento.CopyToAsync(stream);
+                            }
+                        }
+                    }
+                }
+
                 await _empleadoRepositorio.Add(empleado);  // Agregar el nuevo empleado
                 return RedirectToAction(nameof(Index));  // Redirigir a la acción Index
             }
@@ -125,7 +142,5 @@ namespace TConsultigSA.Controllers
                 Text = d.DepartamentoNombre    // Usar la propiedad DepartamentoNombre de tu modelo Departamento
             }).ToList();
         }
-
-
     }
 }

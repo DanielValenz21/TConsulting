@@ -6,14 +6,14 @@ using TConsultigSA.Models;
 
 namespace TConsultigSA.Repositories
 {
-	public class EmpleadoRepositorio
-	{
-		private readonly string _connectionString;
+    public class EmpleadoRepositorio
+    {
+        private readonly string _connectionString;
 
-		public EmpleadoRepositorio(IConfiguration configuration)
-		{
-			_connectionString = configuration.GetConnectionString("DefaultConnection");
-		}
+        public EmpleadoRepositorio(IConfiguration configuration)
+        {
+            _connectionString = configuration.GetConnectionString("DefaultConnection");
+        }
 
         // Obtener todos los empleados
         public async Task<IEnumerable<Empleado>> GetAll()
@@ -25,53 +25,55 @@ namespace TConsultigSA.Repositories
             }
         }
 
-
         // Obtener un empleado por ID
         public async Task<Empleado> GetById(int id)
-		{
-			using (var connection = new SqlConnection(_connectionString))
-			{
-				var query = "SELECT * FROM Empleados WHERE Id = @Id";
-				return await connection.QueryFirstOrDefaultAsync<Empleado>(query, new { Id = id });
-			}
-		}
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var query = "SELECT * FROM Empleados WHERE Id = @Id";
+                return await connection.QueryFirstOrDefaultAsync<Empleado>(query, new { Id = id });
+            }
+        }
 
-		// Insertar un nuevo empleado
-		public async Task<int> Add(Empleado empleado)
-		{
-			using (var connection = new SqlConnection(_connectionString))
-			{
-				var query = @"INSERT INTO Empleados (DPI, Nombre, FechaContratado, IdUsuario, IdPuesto, IdDepartamento) 
-                              VALUES (@DPI, @Nombre, @FechaContratado, @IdUsuario, @IdPuesto, @IdDepartamento)";
-				return await connection.ExecuteAsync(query, empleado);
-			}
-		}
+        // Insertar un nuevo empleado
+        public async Task<int> Add(Empleado empleado)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var query = @"INSERT INTO Empleados (DPI, Nombre, FechaContratado, IdUsuario, IdPuesto, IdDepartamento, Email, Telefono, Direccion) 
+                              VALUES (@DPI, @Nombre, @FechaContratado, @IdUsuario, @IdPuesto, @IdDepartamento, @Email, @Telefono, @Direccion)";
+                return await connection.ExecuteAsync(query, empleado);
+            }
+        }
 
-		// Actualizar un empleado existente
-		public async Task<int> Update(Empleado empleado)
-		{
-			using (var connection = new SqlConnection(_connectionString))
-			{
-				var query = @"UPDATE Empleados SET 
+        // Actualizar un empleado existente
+        public async Task<int> Update(Empleado empleado)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var query = @"UPDATE Empleados SET 
                               DPI = @DPI, 
                               Nombre = @Nombre, 
                               FechaContratado = @FechaContratado, 
                               IdUsuario = @IdUsuario, 
                               IdPuesto = @IdPuesto, 
-                              IdDepartamento = @IdDepartamento
+                              IdDepartamento = @IdDepartamento,
+                              Email = @Email,
+                              Telefono = @Telefono,
+                              Direccion = @Direccion
                               WHERE Id = @Id";
-				return await connection.ExecuteAsync(query, empleado);
-			}
-		}
+                return await connection.ExecuteAsync(query, empleado);
+            }
+        }
 
-		// Eliminar un empleado
-		public async Task<int> Delete(int id)
-		{
-			using (var connection = new SqlConnection(_connectionString))
-			{
-				var query = "DELETE FROM Empleados WHERE Id = @Id";
-				return await connection.ExecuteAsync(query, new { Id = id });
-			}
-		}
-	}
+        // Eliminar un empleado
+        public async Task<int> Delete(int id)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var query = "DELETE FROM Empleados WHERE Id = @Id";
+                return await connection.ExecuteAsync(query, new { Id = id });
+            }
+        }
+    }
 }
