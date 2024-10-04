@@ -38,8 +38,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Empleados/_DetailsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXF9EZXRhaWxzUGFydGlhbC5jc2h0bWw=
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Empleados/_EmpleadoDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXF9FbXBsZWFkb0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Empleados/_EmpleadosTablaCompleta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXF9FbXBsZWFkb3NUYWJsYUNvbXBsZXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Home/Index.cshtml]

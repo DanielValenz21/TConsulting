@@ -1,0 +1,37 @@
+﻿@model IEnumerable<TConsultigSA.Models.Empleado>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>DPI</th>
+            <th>Nombre</th>
+            <th>Fecha Contratado</th>
+            <th>IdPuesto</th>
+            <th>IdDepartamento</th>
+            <th>IdUsuario</th>
+            <th>Email</th>
+            <th>Teléfono</th>
+            <th>Dirección</th>
+            <!-- Agrega más columnas si existen más campos en la tabla -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var empleado in Model)
+        {
+            <tr>
+                <td>@empleado.Id</td>
+                <td>@empleado.DPI</td>
+                <td>@empleado.Nombre</td>
+                <td>@empleado.FechaContratado.ToString("dd/MM/yyyy")</td>
+                <td>@empleado.IdPuesto</td>
+                <td>@empleado.IdDepartamento</td>
+                <td>@empleado.IdUsuario</td>
+                <td>@empleado.Email</td>
+                <td>@empleado.Telefono</td>
+                <td>@empleado.Direccion</td>
+                <!-- Agrega más celdas si hay más campos -->
+            </tr>
+        }
+    </tbody>
+</table>

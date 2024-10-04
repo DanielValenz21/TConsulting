@@ -13,7 +13,6 @@ namespace TConsultigSA.Controllers
         private readonly PuestoRepositorio _puestoRepositorio;  // Repositorio de puestos
         private readonly DepartamentoRepositorio _departamentoRepositorio;  // Repositorio de departamentos
 
-        // Constructor que recibe los repositorios de empleados, puestos y departamentos
         public EmpleadosController(EmpleadoRepositorio empleadoRepositorio, PuestoRepositorio puestoRepositorio, DepartamentoRepositorio departamentoRepositorio)
         {
             _empleadoRepositorio = empleadoRepositorio;
@@ -21,110 +20,98 @@ namespace TConsultigSA.Controllers
             _departamentoRepositorio = departamentoRepositorio;
         }
 
-        // Acción para mostrar la lista de empleados
         public async Task<IActionResult> Index()
         {
             var empleados = await _empleadoRepositorio.GetAll();
             return View(empleados);
         }
 
-        // Acción para mostrar el formulario de creación (GET)
+        // Nueva acción para obtener información completa del empleado
+        public async Task<IActionResult> GetEmpleadoDetails(int id)
+        {
+            var empleado = await _empleadoRepositorio.GetById(id);
+            if (empleado == null)
+            {
+                return NotFound();
+            }
+            return PartialView("_EmpleadoDetails", empleado);
+        }
+
+        public async Task<IActionResult> GetTablaCompleta()
+        {
+            var empleados = await _empleadoRepositorio.GetAll();
+            return PartialView("_EmpleadosTablaCompleta", empleados);
+        }
+
         public async Task<IActionResult> Create()
         {
-            // Cargar los puestos y departamentos para el formulario
             await CargarPuestosYDepartamentos();
             return View();
         }
 
-        // Acción para manejar el POST del formulario de creación (POST)
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Empleado empleado, IFormFileCollection Documentos)
+        public async Task<IActionResult> Create(Empleado empleado)
         {
             if (ModelState.IsValid)
             {
-                // Lógica para manejar la subida de archivos PDF (si es necesario)
-                if (Documentos != null && Documentos.Count > 0)
-                {
-                    foreach (var documento in Documentos)
-                    {
-                        if (documento.Length > 0)
-                        {
-                            // Guardar los documentos en una ubicación específica
-                            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/documentos", documento.FileName);
-                            using (var stream = new FileStream(filePath, FileMode.Create))
-                            {
-                                await documento.CopyToAsync(stream);
-                            }
-                        }
-                    }
-                }
-
-                await _empleadoRepositorio.Add(empleado);  // Agregar el nuevo empleado
-                return RedirectToAction(nameof(Index));  // Redirigir a la acción Index
+                await _empleadoRepositorio.Add(empleado);
+                return RedirectToAction(nameof(Index));
             }
 
-            // Volver a cargar las listas si hay un error en la validación
             await CargarPuestosYDepartamentos();
             return View(empleado);
         }
 
-        // Acción para mostrar el formulario de edición (GET)
         public async Task<IActionResult> Edit(int id)
         {
             var empleado = await _empleadoRepositorio.GetById(id);
             if (empleado == null)
             {
-                return NotFound();  // Si no se encuentra el empleado, devolver error 404
+                return NotFound();
             }
 
-            // Cargar los puestos y departamentos para la edición
             await CargarPuestosYDepartamentos();
             return View(empleado);
         }
 
-        // Acción para manejar el POST del formulario de edición (POST)
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Empleado empleado)
         {
             if (id != empleado.Id)
             {
-                return NotFound();  // Si el ID no coincide, devolver error 404
+                return NotFound();
             }
 
             if (ModelState.IsValid)
             {
-                await _empleadoRepositorio.Update(empleado);  // Actualizar el empleado en la base de datos
-                return RedirectToAction(nameof(Index));  // Redirigir a la acción Index
+                await _empleadoRepositorio.Update(empleado);
+                return RedirectToAction(nameof(Index));
             }
 
-            // Volver a cargar las listas si hay un error en la validación
             await CargarPuestosYDepartamentos();
             return View(empleado);
         }
 
-        // Acción para confirmar la eliminación (GET)
         public async Task<IActionResult> Delete(int id)
         {
             var empleado = await _empleadoRepositorio.GetById(id);
             if (empleado == null)
             {
-                return NotFound();  // Si no se encuentra el empleado, devolver error 404
+                return NotFound();
             }
             return View(empleado);
         }
 
-        // Acción para manejar la eliminación (POST)
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            await _empleadoRepositorio.Delete(id);  // Eliminar el empleado de la base de datos
-            return RedirectToAction(nameof(Index));  // Redirigir a la acción Index
+            await _empleadoRepositorio.Delete(id);
+            return RedirectToAction(nameof(Index));
         }
 
-        // Método auxiliar para cargar los puestos y departamentos
         private async Task CargarPuestosYDepartamentos()
         {
             var puestos = await _puestoRepositorio.GetAll();
@@ -132,14 +119,14 @@ namespace TConsultigSA.Controllers
 
             ViewBag.Puestos = puestos.Select(p => new SelectListItem
             {
-                Value = p.Id.ToString(),       // Usar la propiedad Id de tu modelo Puesto
-                Text = p.Descripcion           // Usar la propiedad Descripcion de tu modelo Puesto
+                Value = p.Id.ToString(),
+                Text = p.Descripcion
             }).ToList();
 
             ViewBag.Departamentos = departamentos.Select(d => new SelectListItem
             {
-                Value = d.Id.ToString(),       // Usar la propiedad Id de tu modelo Departamento
-                Text = d.DepartamentoNombre    // Usar la propiedad DepartamentoNombre de tu modelo Departamento
+                Value = d.Id.ToString(),
+                Text = d.DepartamentoNombre
             }).ToList();
         }
     }
