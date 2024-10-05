@@ -1,0 +1,25 @@
+﻿@model IEnumerable<TConsultigSA.Models.HorasTrabajo>
+
+<h2>Lista de Horas Trabajadas</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Empleado</th>
+            <th>Fecha</th>
+            <th>Horas</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var horasTrabajo in Model)
+        {
+            <tr>
+                <td>@horasTrabajo.IdEmpleado</td>
+                <td>@horasTrabajo.Fecha.ToString("dd/MM/yyyy")</td>
+                <td>@horasTrabajo.TotalHoras</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-success">Registrar Horas</a>

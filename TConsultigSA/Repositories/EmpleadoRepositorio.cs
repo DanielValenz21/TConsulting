@@ -40,8 +40,8 @@ namespace TConsultigSA.Repositories
         {
             using (var connection = new SqlConnection(_connectionString))
             {
-                var query = @"INSERT INTO Empleados (DPI, Nombre, FechaContratado, IdUsuario, IdPuesto, IdDepartamento, Email, Telefono, Direccion) 
-                              VALUES (@DPI, @Nombre, @FechaContratado, @IdUsuario, @IdPuesto, @IdDepartamento, @Email, @Telefono, @Direccion)";
+                var query = @"INSERT INTO Empleados (DPI, Nombre, FechaContratado, IdUsuario, IdPuesto, IdDepartamento, Email, Telefono, Direccion, Salario) 
+                              VALUES (@DPI, @Nombre, @FechaContratado, @IdUsuario, @IdPuesto, @IdDepartamento, @Email, @Telefono, @Direccion, @Salario)";
                 return await connection.ExecuteAsync(query, empleado);
             }
         }
@@ -60,7 +60,8 @@ namespace TConsultigSA.Repositories
                               IdDepartamento = @IdDepartamento,
                               Email = @Email,
                               Telefono = @Telefono,
-                              Direccion = @Direccion
+                              Direccion = @Direccion,
+                              Salario = @Salario
                               WHERE Id = @Id";
                 return await connection.ExecuteAsync(query, empleado);
             }

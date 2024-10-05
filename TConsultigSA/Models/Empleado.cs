@@ -26,5 +26,9 @@ namespace TConsultigSA.Models
         public string Email { get; set; }
         public string Telefono { get; set; }
         public string Direccion { get; set; }
+
+        [Required(ErrorMessage = "El salario es obligatorio")]
+        [Range(0, double.MaxValue, ErrorMessage = "El salario debe ser un valor positivo.")]
+        public decimal Salario { get; set; }
     }
 }

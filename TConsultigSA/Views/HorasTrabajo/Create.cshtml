@@ -1,0 +1,52 @@
+﻿@model TConsultigSA.Models.HorasTrabajo
+
+<h2>Registrar Horas de Trabajo</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="IdEmpleado">Empleado</label>
+        <select asp-for="IdEmpleado" class="form-control" asp-items="@(new SelectList(ViewBag.Empleados, "Id", "Nombre"))">
+            <option value="">Seleccione un empleado</option>
+        </select>
+        <span asp-validation-for="IdEmpleado" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Fecha">Fecha</label>
+        <input asp-for="Fecha" class="form-control" type="date" />
+        <span asp-validation-for="Fecha" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="HoraEntrada">Hora de Entrada</label>
+        <input asp-for="HoraEntrada" class="form-control" type="datetime-local" />
+        <span asp-validation-for="HoraEntrada" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="HoraSalida">Hora de Salida</label>
+        <input asp-for="HoraSalida" class="form-control" type="datetime-local" />
+        <span asp-validation-for="HoraSalida" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TotalHoras">Total Horas</label>
+        <input asp-for="TotalHoras" class="form-control" type="number" step="0.01" />
+        <span asp-validation-for="TotalHoras" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Observaciones">Observaciones</label>
+        <textarea asp-for="Observaciones" class="form-control"></textarea>
+        <span asp-validation-for="Observaciones" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Aprobado">Aprobado</label>
+        <input asp-for="Aprobado" class="form-control" type="checkbox" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+

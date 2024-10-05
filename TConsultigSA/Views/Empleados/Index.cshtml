@@ -8,24 +8,26 @@
             <th>DPI</th>
             <th>Nombre</th>
             <th>Fecha Contratado</th>
+            <th>Salario</th>
             <th>Acciones</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var empleado in Model)
         {
-            <tr>
-                <td>@empleado.DPI</td>
-                <td>@empleado.Nombre</td>
-                <td>@empleado.FechaContratado.ToString("dd/MM/yyyy")</td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@empleado.Id" class="btn btn-warning">Editar</a>
-                    <form asp-action="Delete" asp-route-id="@empleado.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este empleado?');">
-                        <button type="submit" class="btn btn-danger">Eliminar</button>
-                    </form>
-                    <button class="btn btn-info" data-toggle="modal" data-target="#empleadoModal" onclick="cargarEmpleadoDetalles(@empleado.Id)">Ver Información</button>
-                </td>
-            </tr>
+                <tr>
+                    <td>@empleado.DPI</td>
+                    <td>@empleado.Nombre</td>
+                    <td>@empleado.FechaContratado.ToString("dd/MM/yyyy")</td>
+                    <td>@empleado.Salario</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@empleado.Id" class="btn btn-warning">Editar</a>
+                        <form asp-action="Delete" asp-route-id="@empleado.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este empleado?');">
+                            <button type="submit" class="btn btn-danger">Eliminar</button>
+                        </form>
+                        <button class="btn btn-info" data-toggle="modal" data-target="#empleadoModal" onclick="cargarEmpleadoDetalles(@empleado.Id)">Ver Información</button>
+                    </td>
+                </tr>
         }
     </tbody>
 </table>
@@ -42,20 +44,20 @@
 </div>
 
 @section Scripts {
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript">
-        function cargarEmpleadoDetalles(id) {
-            $.ajax({
-                url: '@Url.Action("GetEmpleadoDetails", "Empleados")',
-                type: 'GET',
-                data: { id: id },
-                success: function (result) {
-                    $('#empleadoModal .modal-content').html(result);
-                    $('#empleadoModal').modal('show');
-                }
-            });
-        }
-    </script>
+        <script type="text/javascript">
+            function cargarEmpleadoDetalles(id) {
+                $.ajax({
+                    url: '@Url.Action("GetEmpleadoDetails", "Empleados")',
+                    type: 'GET',
+                    data: { id: id },
+                    success: function (result) {
+                        $('#empleadoModal .modal-content').html(result);
+                        $('#empleadoModal').modal('show');
+                    }
+                });
+            }
+        </script>
 }
