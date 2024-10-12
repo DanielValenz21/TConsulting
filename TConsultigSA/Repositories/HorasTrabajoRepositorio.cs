@@ -15,13 +15,13 @@ namespace TConsultigSA.Repositories
             _connectionString = configuration.GetConnectionString("DefaultConnection");
         }
 
-        // Insertar las horas de trabajo en la base de datos
+        // Insertar horas trabajadas
         public async Task<int> Add(HorasTrabajo horasTrabajo)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
-                var query = @"INSERT INTO HorasTrabajo (IdEmpleado, Fecha, HoraEntrada, HoraSalida, TotalHoras, Observaciones) 
-                      VALUES (@IdEmpleado, @Fecha, @HoraEntrada, @HoraSalida, @TotalHoras, @Observaciones)";
+                var query = @"INSERT INTO HorasTrabajo (IdEmpleado, Fecha, HoraEntrada, HoraSalida, TotalHoras, Observaciones, Aprobado) 
+                              VALUES (@IdEmpleado, @Fecha, @HoraEntrada, @HoraSalida, @TotalHoras, @Observaciones, @Aprobado)";
                 return await connection.ExecuteAsync(query, horasTrabajo);
             }
         }
@@ -36,7 +36,7 @@ namespace TConsultigSA.Repositories
             }
         }
 
-        // Obtener las horas trabajadas por un empleado específico
+        // Obtener horas trabajadas por ID
         public async Task<HorasTrabajo> GetById(int id)
         {
             using (var connection = new SqlConnection(_connectionString))
