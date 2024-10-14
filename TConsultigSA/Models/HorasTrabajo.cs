@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace TConsultigSA.Models
 {
@@ -7,25 +6,20 @@ namespace TConsultigSA.Models
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "El empleado es obligatorio")]
+        // Aquí definimos la relación con Empleado
         public int IdEmpleado { get; set; }
 
-        [Required(ErrorMessage = "La fecha es obligatoria")]
+        // Si no necesitas la relación de navegación, puedes quitarla o hacerla nullable
+        public virtual Empleado? Empleado { get; set; }
+
         public DateTime Fecha { get; set; }
 
-        [Required(ErrorMessage = "La hora de entrada es obligatoria")]
-        public DateTime HoraEntrada { get; set; }
+        [Required(ErrorMessage = "Las horas trabajadas son obligatorias.")]
+        public decimal TotalHoras { get; set; }
 
-        public DateTime? HoraSalida { get; set; }  // Campo opcional
-
-        public decimal? TotalHoras { get; set; }  // Campo opcional
-
-        [MaxLength(255)]
+        [Required(ErrorMessage = "Las observaciones son requeridas.")]
         public string Observaciones { get; set; }
 
-        public bool Aprobado { get; set; } = false;
-
-        // Propiedad de navegación al empleado (opcional si se desea acceder a los detalles del empleado)
-        public Empleado Empleado { get; set; }
+        public bool Aprobado { get; set; }
     }
 }

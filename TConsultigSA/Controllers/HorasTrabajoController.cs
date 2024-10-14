@@ -2,47 +2,52 @@
 using System.Threading.Tasks;
 using TConsultigSA.Models;
 using TConsultigSA.Repositories;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using TConsultingSA.Repositories;
 
 namespace TConsultigSA.Controllers
 {
     public class HorasTrabajoController : Controller
     {
-        private readonly HorasTrabajoRepositorio _horasTrabajoRepositorio;
+        private readonly IHorasTrabajoRepositorio _horasRepositorio;
         private readonly EmpleadoRepositorio _empleadoRepositorio;
 
-        public HorasTrabajoController(HorasTrabajoRepositorio horasTrabajoRepositorio, EmpleadoRepositorio empleadoRepositorio)
+        public HorasTrabajoController(IHorasTrabajoRepositorio horasRepositorio, EmpleadoRepositorio empleadoRepositorio)
         {
-            _horasTrabajoRepositorio = horasTrabajoRepositorio;
+            _horasRepositorio = horasRepositorio;
             _empleadoRepositorio = empleadoRepositorio;
         }
 
-        // Mostrar lista de horas trabajadas
         public async Task<IActionResult> Index()
         {
-            var horasTrabajadas = await _horasTrabajoRepositorio.GetAll();
-            return View(horasTrabajadas);
+            var horas = await _horasRepositorio.GetAll();
+            return View(horas);
         }
 
-        // Mostrar formulario de creación
         public async Task<IActionResult> Create()
         {
-            ViewBag.Empleados = await _empleadoRepositorio.GetAll(); // Obtener lista de empleados
+            ViewBag.Empleados = new SelectList(await _empleadoRepositorio.GetAll(), "Id", "Nombre");
             return View();
         }
-
-        // Procesar formulario de creación
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(HorasTrabajo horasTrabajo)
         {
             if (ModelState.IsValid)
             {
-                await _horasTrabajoRepositorio.Add(horasTrabajo);
+                // Asignamos el IdEmpleado directamente al modelo antes de insertarlo
+                horasTrabajo.IdEmpleado = horasTrabajo.IdEmpleado; // Asigna el valor que venga del formulario
+
+                // Insertamos el registro
+                await _horasRepositorio.Add(horasTrabajo);
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewBag.Empleados = await _empleadoRepositorio.GetAll();
+            // Si no es válido, recargamos el dropdown de empleados
+            ViewBag.Empleados = new SelectList(await _empleadoRepositorio.GetAll(), "Id", "Nombre");
             return View(horasTrabajo);
         }
+
+
     }
 }

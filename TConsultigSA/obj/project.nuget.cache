@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aGHJxyxfs/Q=",
+  "dgSpecHash": "7mT+vkjxvUU=",
   "success": true,
-  "projectFilePath": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\TConsultigSA.csproj",
+  "projectFilePath": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\TConsultingSA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hetzo\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\hetzo\\.nuget\\packages\\azure.identity\\1.11.3\\azure.identity.1.11.3.nupkg.sha512",

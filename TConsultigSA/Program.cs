@@ -5,6 +5,7 @@ using BCrypt.Net;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using TConsultigSA.Repositories;
+using TConsultingSA.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +18,7 @@ builder.Services.AddScoped<DepartamentoRepositorio>();
 builder.Services.AddScoped<UsuarioRepositorio>();
 builder.Services.AddScoped<IRolRepositorio, RolRepositorio>();
 builder.Services.AddScoped<IPermisoRepositorio, PermisoRepositorio>();
-builder.Services.AddScoped<HorasTrabajoRepositorio>();
+builder.Services.AddScoped<IHorasTrabajoRepositorio, HorasTrabajoRepositorio>();
 
 // Configuración de autenticación con cookies
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)

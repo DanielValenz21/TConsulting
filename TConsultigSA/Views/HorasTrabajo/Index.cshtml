@@ -1,25 +1,35 @@
 ﻿@model IEnumerable<TConsultigSA.Models.HorasTrabajo>
 
-<h2>Lista de Horas Trabajadas</h2>
+<h2>Horas Trabajadas Mensuales</h2>
 
 <table class="table">
     <thead>
         <tr>
-            <th>Empleado</th>
-            <th>Fecha</th>
-            <th>Horas</th>
+            <th>Nombre del Empleado</th>
+            <th>Mes</th>
+            <th>Horas Trabajadas</th>
+            <th>Estado</th>
+            <th>Acciones</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var horasTrabajo in Model)
+        @foreach (var horas in Model)
         {
             <tr>
-                <td>@horasTrabajo.IdEmpleado</td>
-                <td>@horasTrabajo.Fecha.ToString("dd/MM/yyyy")</td>
-                <td>@horasTrabajo.TotalHoras</td>
+                <td>@horas.Empleado?.Nombre ?? "No asignado"</td>
+                <td>@horas.Fecha.ToString("MM/yyyy")</td>
+                <td>@horas.TotalHoras</td>
+                <td>@(horas.Aprobado ? "Aprobado" : "Pendiente")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@horas.Id" class="btn btn-warning">Editar</a>
+                    <a asp-action="Details" asp-route-id="@horas.Id" class="btn btn-info">Detalles</a>
+                    <form asp-action="Delete" asp-route-id="@horas.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Estás seguro de eliminar este registro?');">
+                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                    </form>
+                </td>
             </tr>
         }
     </tbody>
 </table>
 
-<a asp-action="Create" class="btn btn-success">Registrar Horas</a>
+<a asp-action="Create" class="btn btn-success">Agregar Horas</a>

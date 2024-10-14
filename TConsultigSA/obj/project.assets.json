@@ -1975,9 +1975,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\TConsultigSA.csproj",
-      "projectName": "TConsultigSA",
-      "projectPath": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\TConsultigSA.csproj",
+      "projectUniqueName": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\TConsultingSA.csproj",
+      "projectName": "TConsultingSA",
+      "projectPath": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\TConsultingSA.csproj",
       "packagesPath": "C:\\Users\\hetzo\\.nuget\\packages\\",
       "outputPath": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\obj\\",
       "projectStyle": "PackageReference",
