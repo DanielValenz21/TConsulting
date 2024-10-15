@@ -48,6 +48,34 @@ namespace TConsultigSA.Controllers
             return View(horasTrabajo);
         }
 
+        // GET: HorasTrabajo/Edit/5
+        public async Task<IActionResult> Edit(int id)
+        {
+            var horasTrabajo = await _horasRepositorio.GetById(id);
+            if (horasTrabajo == null)
+            {
+                return NotFound();
+            }
+
+            // Cargar la lista de empleados para el dropdown
+            ViewBag.Empleados = new SelectList(await _empleadoRepositorio.GetAll(), "Id", "Nombre");
+            return View(horasTrabajo);
+        }// Acción para confirmar la eliminación
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var horasTrabajo = await _horasRepositorio.GetById(id);
+            if (horasTrabajo == null)
+            {
+                return NotFound();
+            }
+
+            await _horasRepositorio.Delete(id);
+            return RedirectToAction(nameof(Index));
+        }
+
+
 
     }
 }

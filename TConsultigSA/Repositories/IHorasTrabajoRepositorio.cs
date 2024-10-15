@@ -6,6 +6,9 @@ namespace TConsultingSA.Repositories
     {
         Task<IEnumerable<HorasTrabajo>> GetAll();
         Task<int> Add(HorasTrabajo horasTrabajo);
+        Task<HorasTrabajo> GetById(int id);
+        Task<int> Delete(int id);
         // Puedes agregar más métodos según sea necesario, como Update, Delete, etc.
+
     }
 }

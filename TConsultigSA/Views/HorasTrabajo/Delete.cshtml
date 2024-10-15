@@ -1,0 +1,26 @@
+﻿@model TConsultigSA.Models.HorasTrabajo
+
+<h2>Eliminar Registro de Horas</h2>
+
+<h3>¿Estás seguro que deseas eliminar este registro?</h3>
+
+<div>
+    <h4>Horas Trabajadas para @Model.Empleado.Nombre</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Fecha</dt>
+        <dd class="col-sm-10">@Model.Fecha.ToString("MM/yyyy")</dd>
+
+        <dt class="col-sm-2">Total Horas</dt>
+        <dd class="col-sm-10">@Model.TotalHoras</dd>
+
+        <dt class="col-sm-2">Aprobado</dt>
+        <dd class="col-sm-10">@(Model.Aprobado ? "Sí" : "No")</dd>
+    </dl>
+
+    <form asp-action="DeleteConfirmed" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

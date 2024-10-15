@@ -2,12 +2,13 @@
 
 <h2>Horas Trabajadas Mensuales</h2>
 
-<table class="table">
+<table class="table table-striped">
     <thead>
         <tr>
             <th>Nombre del Empleado</th>
             <th>Mes</th>
             <th>Horas Trabajadas</th>
+            <th>Observaciones</th>
             <th>Estado</th>
             <th>Acciones</th>
         </tr>
@@ -16,16 +17,19 @@
         @foreach (var horas in Model)
         {
             <tr>
-                <td>@horas.Empleado?.Nombre ?? "No asignado"</td>
-                <td>@horas.Fecha.ToString("MM/yyyy")</td>
-                <td>@horas.TotalHoras</td>
-                <td>@(horas.Aprobado ? "Aprobado" : "Pendiente")</td>
+                <td>@(horas.Empleado?.Nombre ?? "No asignado")</td> <!-- Nombre del empleado -->
+                <td>@horas.Fecha.ToString("MM/yyyy")</td> <!-- Formateo del mes y año -->
+                <td>@horas.TotalHoras</td> <!-- Total de horas trabajadas -->
+                <td>@horas.Observaciones</td> <!-- Observaciones -->
+                <td>@(horas.Aprobado ? "Aprobado" : "Pendiente")</td> <!-- Estado aprobado o pendiente -->
                 <td>
                     <a asp-action="Edit" asp-route-id="@horas.Id" class="btn btn-warning">Editar</a>
                     <a asp-action="Details" asp-route-id="@horas.Id" class="btn btn-info">Detalles</a>
-                    <form asp-action="Delete" asp-route-id="@horas.Id" method="post" style="display:inline;" onsubmit="return confirm('¿Estás seguro de eliminar este registro?');">
-                        <button type="submit" class="btn btn-danger">Eliminar</button>
-                    </form>
+
+                    <!-- Botón para abrir el modal de eliminación -->
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" data-id="@horas.Id" data-nombre="@horas.Empleado?.Nombre">
+                        Eliminar
+                    </button>
                 </td>
             </tr>
         }
@@ -33,3 +37,45 @@
 </table>
 
 <a asp-action="Create" class="btn btn-success">Agregar Horas</a>
+
+<!-- Modal de confirmación de eliminación -->
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Confirmar Eliminación</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ¿Estás seguro de que deseas eliminar este registro de horas trabajadas para el empleado <strong id="modalEmpleadoNombre"></strong>?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <form id="deleteForm" method="post" action="">
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $('#deleteModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget); // Botón que activó el modal
+            var id = button.data('id'); // Extrae la información del atributo data-id
+            var nombre = button.data('nombre'); // Extrae el nombre del empleado
+
+            var modal = $(this);
+            modal.find('#modalEmpleadoNombre').text(nombre); // Muestra el nombre en el modal
+
+            // Configura la acción del formulario para apuntar al controlador correcto
+            $('#deleteForm').attr('action', '/HorasTrabajo/DeleteConfirmed/' + id);
+        });
+    </script>
+}
