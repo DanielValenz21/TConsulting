@@ -8,6 +8,7 @@ namespace TConsultingSA.Repositories
         Task<int> Add(HorasTrabajo horasTrabajo);
         Task<HorasTrabajo> GetById(int id);
         Task<int> Delete(int id);
+        Task<int> Update(HorasTrabajo horasTrabajo);
         // Puedes agregar más métodos según sea necesario, como Update, Delete, etc.
 
     }

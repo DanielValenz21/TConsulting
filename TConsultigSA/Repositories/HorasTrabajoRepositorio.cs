@@ -38,30 +38,30 @@ namespace TConsultigSA.Repositories
                 return horasTrabajadas;
             }
         }
-
         public async Task<HorasTrabajo> GetById(int id)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
                 var query = @"SELECT ht.*, e.* 
-                      FROM HorasTrabajo ht 
+                      FROM HorasTrabajo ht
                       INNER JOIN Empleados e ON ht.IdEmpleado = e.Id
                       WHERE ht.Id = @Id";
 
-                var horasTrabajo = await connection.QueryAsync<HorasTrabajo, Empleado, HorasTrabajo>(
+                var horasTrabajadas = await connection.QueryAsync<HorasTrabajo, Empleado, HorasTrabajo>(
                     query,
-                    (horas, empleado) =>
+                    (horasTrabajo, empleado) =>
                     {
-                        horas.Empleado = empleado;
-                        return horas;
+                        horasTrabajo.Empleado = empleado;
+                        return horasTrabajo;
                     },
-                    new { Id = id },
-                    splitOn: "IdEmpleado");
+                    new { Id = id }, // Pasamos el parámetro a la consulta
+                    splitOn: "IdEmpleado"
+                );
 
-                return horasTrabajo.FirstOrDefault();
+                return horasTrabajadas.FirstOrDefault(); // Retornamos el primer registro (si existe)
             }
         }
-  
+
 
         public async Task<int> Add(HorasTrabajo horasTrabajo)
         {
@@ -80,6 +80,24 @@ namespace TConsultigSA.Repositories
                 return await connection.ExecuteAsync(query, new { Id = id });
             }
         }
+        public async Task<int> Update(HorasTrabajo horasTrabajo)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var query = @"
+            UPDATE HorasTrabajo 
+            SET 
+                IdEmpleado = @IdEmpleado,
+                Fecha = @Fecha,
+                TotalHoras = @TotalHoras,
+                Observaciones = @Observaciones,
+                Aprobado = @Aprobado
+            WHERE Id = @Id";
+
+                return await connection.ExecuteAsync(query, horasTrabajo);
+            }
+        }
+
 
     }
 }

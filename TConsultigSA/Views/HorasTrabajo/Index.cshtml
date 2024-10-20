@@ -18,18 +18,14 @@
         {
             <tr>
                 <td>@(horas.Empleado?.Nombre ?? "No asignado")</td> <!-- Nombre del empleado -->
-                <td>@horas.Fecha.ToString("MM/yyyy")</td> <!-- Formateo del mes y año -->
-                <td>@horas.TotalHoras</td> <!-- Total de horas trabajadas -->
+                <td>@horas.Fecha.ToString("MM/yyyy")</td> <!-- Mes y año -->
+                <td>@horas.TotalHoras</td> <!-- Total de horas -->
                 <td>@horas.Observaciones</td> <!-- Observaciones -->
-                <td>@(horas.Aprobado ? "Aprobado" : "Pendiente")</td> <!-- Estado aprobado o pendiente -->
+                <td>@(horas.Aprobado ? "Aprobado" : "Pendiente")</td> <!-- Estado -->
                 <td>
                     <a asp-action="Edit" asp-route-id="@horas.Id" class="btn btn-warning">Editar</a>
                     <a asp-action="Details" asp-route-id="@horas.Id" class="btn btn-info">Detalles</a>
-
-                    <!-- Botón para abrir el modal de eliminación -->
-                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" data-id="@horas.Id" data-nombre="@horas.Empleado?.Nombre">
-                        Eliminar
-                    </button>
+                    <a asp-action="Delete" asp-route-id="@horas.Id" class="btn btn-danger">Eliminar</a>
                 </td>
             </tr>
         }
@@ -37,6 +33,7 @@
 </table>
 
 <a asp-action="Create" class="btn btn-success">Agregar Horas</a>
+
 
 <!-- Modal de confirmación de eliminación -->
 <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">

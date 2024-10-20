@@ -62,8 +62,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9yYXNUcmFiYWpvXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/HorasTrabajo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9yYXNUcmFiYWpvXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/HorasTrabajo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9yYXNUcmFiYWpvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/HorasTrabajo/_DetallesHorasModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9yYXNUcmFiYWpvXF9EZXRhbGxlc0hvcmFzTW9kYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Repositorio/ASP.net/TConsulting/TConsultigSA/Views/Roles/Create.cshtml]
