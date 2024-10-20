@@ -4,7 +4,6 @@ using TConsultigSA.Models;
 using TConsultigSA.Repositories;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using TConsultingSA.Repositories;
-using TConsultingSA.Models;
 
 namespace TConsultigSA.Controllers
 {

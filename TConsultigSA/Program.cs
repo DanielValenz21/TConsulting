@@ -19,6 +19,7 @@ builder.Services.AddScoped<UsuarioRepositorio>();
 builder.Services.AddScoped<IRolRepositorio, RolRepositorio>();
 builder.Services.AddScoped<IPermisoRepositorio, PermisoRepositorio>();
 builder.Services.AddScoped<IHorasTrabajoRepositorio, HorasTrabajoRepositorio>();
+builder.Services.AddScoped<EmpresaRepositorio>();
 
 // Configuración de autenticación con cookies
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)

@@ -1,0 +1,32 @@
+﻿@model IEnumerable<TConsultigSA.Models.Empresa>
+
+<h2>Empresas</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Dirección</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var empresa in Model)
+        {
+            <tr>
+                <td>@empresa.Nombre</td>
+                <td>@empresa.Direccion</td>
+                <td>@empresa.Telefono</td>
+                <td>@empresa.Email</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@empresa.Id" class="btn btn-primary">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@empresa.Id" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-success">Agregar Empresa</a>
