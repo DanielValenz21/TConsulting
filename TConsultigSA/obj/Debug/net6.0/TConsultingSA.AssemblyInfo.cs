@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TConsultingSA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ccd78703d8378d4ed97dc1b01f6538cc24b43aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5650b5d9ef495db7e9d8dc7d1d80983de458710")]
 [assembly: System.Reflection.AssemblyProductAttribute("TConsultingSA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TConsultingSA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

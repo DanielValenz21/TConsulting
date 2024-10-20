@@ -2,15 +2,105 @@
     ViewData["Title"] = "Inicio";
 }
 
-@section DrawerSection {
-    <div class="list-group">
-        <a href="/Home/Index" class="list-group-item list-group-item-action">Inicio</a>
-        <a href="/Empleados/Index" class="list-group-item list-group-item-action">Empleados</a>
-        <a href="/Roles/Index" class="list-group-item list-group-item-action">Roles</a>
-        <a href="/Permisos/Index" class="list-group-item list-group-item-action">Permisos</a>
-        <a href="/Departamentos/Index" class="list-group-item list-group-item-action">Departamentos</a>
+<div class="d-flex">
+    <!-- Sidebar fijo (posición ya establecida) -->
+    <partial name="_Sidebar" />
+
+    <!-- Contenido desplazable -->
+    <div id="page-content-wrapper" style="margin-left: 250px; padding: 20px; flex: 1;">
+        <div class="container">
+            <h2 class="text-md-center mt-5" style="color: #C20114;">Panel de Control</h2>
+
+            <!-- Resumen general en tarjetas -->
+            <div class="row mt-5">
+                <div class="col-md-3">
+                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Empleados</div>
+                        <div class="card-body">
+                            <h5 class="card-title">120</h5> <!-- Número de empleados -->
+                            <p class="card-text">Empleados registrados en el sistema.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Roles</div>
+                        <div class="card-body">
+                            <h5 class="card-title">8</h5> <!-- Número de roles -->
+                            <p class="card-text">Roles de usuario activos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Permisos</div>
+                        <div class="card-body">
+                            <h5 class="card-title">15</h5> <!-- Número de permisos -->
+                            <p class="card-text">Permisos asignados a los roles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Departamentos</div>
+                        <div class="card-body">
+                            <h5 class="card-title">5</h5> <!-- Número de departamentos -->
+                            <p class="card-text">Departamentos registrados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico o resumen adicional (Placeholder para gráfico) -->
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            Estadísticas de Empleados por Departamento
+                        </div>
+                        <div class="card-body">
+                            <canvas id="empleadosPorDepartamento"></canvas> <!-- Aquí podrías agregar un gráfico con Chart.js por ejemplo -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Atajos rápidos -->
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <a href="/Empleados/Create" class="btn btn-success btn-lg">Crear Nuevo Empleado</a>
+                    <a href="/Roles/Create" class="btn btn-info btn-lg">Administrar Roles</a>
+                    <a href="/Departamentos/Create" class="btn btn-warning btn-lg">Agregar Departamento</a>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Llamada a la librería Chart.js -->
+    <script>
+        // Ejemplo básico para un gráfico
+        var ctx = document.getElementById('empleadosPorDepartamento').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Desarrollo', 'Marketing', 'Ventas', 'Recursos Humanos', 'Administración'],
+                datasets: [{
+                    label: 'Empleados',
+                    data: [30, 20, 40, 10, 20],
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
 }
 
-<h2>Inicio</h2>
-<p>Bienvenido a la página principal del sistema.</p>

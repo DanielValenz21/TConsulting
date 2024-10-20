@@ -28,3 +28,50 @@ body {
 }
 
 /* Más estilos de `styles` */
+
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column !important;
+        width: 90% !important;
+        height: auto !important;
+    }
+
+        .card div {
+            width: 100% !important;
+        }
+
+    .d-flex {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+
+        .d-flex button, .d-flex .btn-secondary {
+            width: 100% !important;
+        }
+}
+
+/*ESTILOS SIDE BAR*/
+/* Estilos para el Sidebar */
+#wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar-wrapper {
+    width: 250px;
+    height: 100vh;
+}
+
+#page-content-wrapper {
+    flex: 1; /* Asegura que el contenido ocupe todo el ancho restante */
+    padding: 20px;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: -250px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    padding-left: 0;
+}
