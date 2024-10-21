@@ -2,13 +2,36 @@
     ViewData["Title"] = "Bienvenido a TConsultigSA";
 }
 
-<div class="jumbotron text-center" style="background-color: #f8f9fa; padding: 2rem; margin-top: 2rem;">
-    <h1 class="display-4">¡Bienvenido a TConsultigSA!</h1>
-    <p class="lead">Gestiona tus empleados y nómina de forma eficiente y segura. Nuestra plataforma te ayuda a automatizar tus procesos de recursos humanos, optimizando el tiempo y facilitando la administración de tu empresa.</p>
-    <hr class="my-4">
-    <p>¿Eres nuevo aquí? Regístrate para comenzar a usar nuestra plataforma o inicia sesión si ya tienes una cuenta.</p>
-    <div class="d-flex justify-content-center">
-        <a href="/Auth/Login" class="btn btn-primary btn-lg mx-2">Iniciar Sesión</a>
-        <a href="/Auth/Registro" class="btn btn-success btn-lg mx-2">Registrarse</a>
+<style>
+    
+    .background-image-welcome {
+        background-image: url('@Url.Content("~/images/EmpresaC.jpg")');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-welcome {
+        background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+        padding: 2rem;
+        border-radius: 1px;
+        text-align: center;
+    }
+
+</style>
+
+<div class="background-image-welcome">
+    <div class="content-welcome">
+        <h1 class="display-4">¡Bienvenido a TConsultigSA!</h1>
+        <p class="lead">Gestiona tus empleados y nómina de forma eficiente y segura. Nuestra plataforma te ayuda a automatizar tus procesos de recursos humanos, optimizando el tiempo y facilitando la administración de tu empresa.</p>
+        <hr class="my-4">
+        <p>¿Eres nuevo aquí? Regístrate para comenzar a usar nuestra plataforma o inicia sesión si ya tienes una cuenta.</p>
+        <div class="d-flex justify-content-center" style="gap: 0.5rem;">
+            <a href="/Auth/Login" class="btn btn-primary btn-lg mx-2">Iniciar Sesión</a>
+            <a href="/Auth/Registro" class="btn btn-success btn-lg mx-2">Registrarse</a>
+        </div>
     </div>
 </div>

@@ -1,9 +1,37 @@
-﻿@* Views/Shared/_Sidebar.cshtml *@
-<div class="list-group">
-    <a href="/Home/Index" class="list-group-item list-group-item-action">Inicio</a>
-    <a href="/Empleados/Index" class="list-group-item list-group-item-action">Empleados</a>
-    <a href="/Roles/Index" class="list-group-item list-group-item-action">Roles</a>
-    <a href="/Permisos/Index" class="list-group-item list-group-item-action">Permisos</a>
-    <a href="/Departamentos/Index" class="list-group-item list-group-item-action">Departamentos</a>
-    <!-- Puedes agregar más enlaces aquí -->
+﻿<!-- Sidebar -->
+<div class="bg-dark border-right d-flex flex-column justify-content-between" id="sidebar-wrapper" style="height: 100vh; position: fixed; top: 0; left: 0; width: 250px;">
+    <!-- Contenedor superior (Imagen y lista) -->
+    <div>
+        <!-- Imagen circular ajustada -->
+        <div class="sidebar-heading">
+            <a href="/Home/Index">
+            <img src="~/images/tconsultinglogo2.png" alt="Logo TConsultigSA" class="img-fluid" style="border-radius: 50%; width: 100px; height: 100px; margin: 10px auto; display: block;" />
+        </div>
+
+        <!-- Lista de navegación, ajustada debajo de la imagen -->
+        <div class="list-group list-group-flush">
+            <a href="/Home/Index" class="list-group-item list-group-item-action bg-dark text-white">
+                <i class="fas fa-home fa-sm"></i> Inicio
+            </a>
+            <a href="/Empleados/Index" class="list-group-item list-group-item-action bg-dark text-white">
+                <i class="fas fa-users fa-sm"></i> Empleados
+            </a>
+            <a href="/Roles/Index" class="list-group-item list-group-item-action bg-dark text-white">
+                <i class="fas fa-user-shield fa-sm"></i> Roles
+            </a>
+            <a href="/Permisos/Index" class="list-group-item list-group-item-action bg-dark text-white">
+                <i class="fas fa-key fa-sm"></i> Permisos
+            </a>
+            <a href="/Departamentos/Index" class="list-group-item list-group-item-action bg-dark text-white">
+                <i class="fas fa-building fa-sm"></i> Departamentos
+            </a>
+        </div>
+    </div>
+
+    <!-- Enlace de Cerrar Sesión al final -->
+    <div class="list-group-item list-group-item-action bg-dark text-white text-center mt-auto">
+        <a href="/Auth/Logout" class="text-white">
+            <i class="fas fa-sign-out-alt fa-sm"></i> Cerrar Sesión
+        </a>
+    </div>
 </div>
