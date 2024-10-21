@@ -1970,19 +1970,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lucy_\\.nuget\\packages\\": {}
+    "C:\\Users\\hetzo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repositorio\\asp.net\\DANI\\TConsulting\\TConsultigSA\\TConsultingSA.csproj",
+      "projectUniqueName": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\TConsultingSA.csproj",
       "projectName": "TConsultingSA",
-      "projectPath": "C:\\repositorio\\asp.net\\DANI\\TConsulting\\TConsultigSA\\TConsultingSA.csproj",
-      "packagesPath": "C:\\Users\\lucy_\\.nuget\\packages\\",
-      "outputPath": "C:\\repositorio\\asp.net\\DANI\\TConsulting\\TConsultigSA\\obj\\",
+      "projectPath": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\TConsultingSA.csproj",
+      "packagesPath": "C:\\Users\\hetzo\\.nuget\\packages\\",
+      "outputPath": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lucy_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hetzo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2046,7 +2046,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

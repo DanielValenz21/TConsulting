@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Repositorio\\ASP.net\\TConsulting\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\repositories\\departamentorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\repositories\\departamentorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -29,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\models\\departamentoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\models\\departamentoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,7 +78,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "TConsultigSA\\appsettings.Development.json",
+              "ToolTip": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\appsettings.Development.json",
+              "RelativeToolTip": "TConsultigSA\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-21T01:30:42.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "DepartamentoViewModel.cs",
               "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Models\\DepartamentoViewModel.cs",
               "RelativeDocumentMoniker": "TConsultigSA\\Models\\DepartamentoViewModel.cs",
@@ -82,12 +99,11 @@
               "RelativeToolTip": "TConsultigSA\\Models\\DepartamentoViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T01:01:50.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T01:01:50.006Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Views\\Departamentos\\Edit.cshtml",
               "RelativeDocumentMoniker": "TConsultigSA\\Views\\Departamentos\\Edit.cshtml",
@@ -95,12 +111,11 @@
               "RelativeToolTip": "TConsultigSA\\Views\\Departamentos\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-21T00:06:39.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T00:06:39.996Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Views\\Departamentos\\Create.cshtml",
               "RelativeDocumentMoniker": "TConsultigSA\\Views\\Departamentos\\Create.cshtml",
@@ -108,25 +123,24 @@
               "RelativeToolTip": "TConsultigSA\\Views\\Departamentos\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-21T00:06:28.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T00:06:28.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DepartamentoRepositorio.cs",
               "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Repositories\\DepartamentoRepositorio.cs",
               "RelativeDocumentMoniker": "TConsultigSA\\Repositories\\DepartamentoRepositorio.cs",
               "ToolTip": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Repositories\\DepartamentoRepositorio.cs",
               "RelativeToolTip": "TConsultigSA\\Repositories\\DepartamentoRepositorio.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAQwEcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAowBQAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-20T23:19:50.059Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Program.cs",
               "RelativeDocumentMoniker": "TConsultigSA\\Program.cs",
@@ -139,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Views\\Departamentos\\Index.cshtml",
               "RelativeDocumentMoniker": "TConsultigSA\\Views\\Departamentos\\Index.cshtml",
@@ -147,12 +161,11 @@
               "RelativeToolTip": "TConsultigSA\\Views\\Departamentos\\Index.cshtml",
               "ViewState": "AgIAAAEAAAAAAAAAAAAswB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-20T23:55:30.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T23:55:30.545Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "DepartamentosController.cs",
               "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Controllers\\DepartamentosController.cs",
               "RelativeDocumentMoniker": "TConsultigSA\\Controllers\\DepartamentosController.cs",
@@ -160,12 +173,11 @@
               "RelativeToolTip": "TConsultigSA\\Controllers\\DepartamentosController.cs",
               "ViewState": "AgIAAHUAAAAAAAAAAAAzwJEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T23:55:04.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T23:55:04.305Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Departamento.cs",
               "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Models\\Departamento.cs",
               "RelativeDocumentMoniker": "TConsultigSA\\Models\\Departamento.cs",
@@ -173,8 +185,7 @@
               "RelativeToolTip": "TConsultigSA\\Models\\Departamento.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T23:19:57.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T23:19:57.298Z"
             }
           ]
         }
