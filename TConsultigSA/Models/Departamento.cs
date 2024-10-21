@@ -1,10 +1,12 @@
-﻿namespace TConsultigSA.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace TConsultigSA.Models
 {
     public class Departamento
     {
-        public int Id { get; set; }  // Clave primaria del departamento
-        public string DepartamentoNombre { get; set; }  // Nombre del departamento
-        public int IdLider { get; set; }  // ID del líder del departamento (opcional)
-        public int IdEmpresa { get; set; }  // Relación con la tabla Empresas (clave externa)
+        public int Id { get; set; }
+        public string DepartamentoNombre { get; set; }
+        public int? IdLider { get; set; }  // Nullable en caso de no seleccionar líder
+        public int IdEmpresa { get; set; }
     }
 }

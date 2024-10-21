@@ -1,0 +1,30 @@
+﻿@model IEnumerable<TConsultigSA.Models.DepartamentoViewModel>
+
+<h2>Departamentos</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre del Departamento</th>
+            <th>Líder</th>
+            <th>Empresa</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.DepartamentoNombre</td>
+                <td>@item.LiderNombre</td>
+                <td>@item.EmpresaNombre</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-success">Agregar Departamento</a>
