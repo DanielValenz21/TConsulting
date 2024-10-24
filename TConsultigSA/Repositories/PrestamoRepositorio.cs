@@ -35,28 +35,28 @@ namespace TConsultigSA.Repositories
             }
         }
 
+        // Insertar un nuevo préstamo
         public async Task<int> Add(Prestamo prestamo)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
-                var query = @"INSERT INTO Prestamos (IdEmpleado, Total, CuotasPendientes, FechaPrestamo, IdTipo)
-                      VALUES (@IdEmpleado, @Total, @CuotasPendientes, @FechaPrestamo, @IdTipo)";
+                var query = @"INSERT INTO Prestamos (IdEmpleado, Total, CuotasPendientes, FechaPrestamo, IdTipo) 
+                              VALUES (@IdEmpleado, @Total, @CuotasPendientes, @FechaPrestamo, @IdTipo)";
                 return await connection.ExecuteAsync(query, prestamo);
             }
         }
 
-
-
-        // Actualizar un préstamo existente
+        // Actualizar un préstamo
         public async Task<int> Update(Prestamo prestamo)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
                 var query = @"UPDATE Prestamos SET 
-                                IdEmpleado = @IdEmpleado, 
-                                Total = @Total, 
-                                FechaPrestamo = @FechaPrestamo,
-                                CuotasPendientes = @CuotasPendientes 
+                              IdEmpleado = @IdEmpleado, 
+                              Total = @Total, 
+                              CuotasPendientes = @CuotasPendientes, 
+                              FechaPrestamo = @FechaPrestamo, 
+                              IdTipo = @IdTipo
                               WHERE Id = @Id";
                 return await connection.ExecuteAsync(query, prestamo);
             }

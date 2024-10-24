@@ -2,42 +2,41 @@
 using System.Threading.Tasks;
 using TConsultigSA.Models;
 using TConsultigSA.Repositories;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace TConsultigSA.Controllers
 {
     public class PrestamosController : Controller
     {
         private readonly PrestamoRepositorio _prestamoRepositorio;
-        private readonly EmpleadoRepositorio _empleadoRepositorio; // Para seleccionar empleados
+        private readonly EmpleadoRepositorio _empleadoRepositorio;
+        private readonly TipoPrestamoRepositorio _tipoPrestamoRepositorio;
 
-        public PrestamosController(PrestamoRepositorio prestamoRepositorio, EmpleadoRepositorio empleadoRepositorio)
+        // Inyección de dependencias a través del constructor
+        public PrestamosController(PrestamoRepositorio prestamoRepositorio,
+                                   EmpleadoRepositorio empleadoRepositorio,
+                                   TipoPrestamoRepositorio tipoPrestamoRepositorio)
         {
             _prestamoRepositorio = prestamoRepositorio;
             _empleadoRepositorio = empleadoRepositorio;
+            _tipoPrestamoRepositorio = tipoPrestamoRepositorio;
         }
 
-        // Listar todos los préstamos
+        // Acción para mostrar la lista de préstamos
         public async Task<IActionResult> Index()
         {
             var prestamos = await _prestamoRepositorio.GetAll();
             return View(prestamos);
         }
 
-        // Mostrar formulario de creación
+        // Acción para crear un préstamo (GET)
         public async Task<IActionResult> Create()
         {
-            var empleados = await _empleadoRepositorio.GetAll();
-            ViewBag.Empleados = empleados.Select(e => new SelectListItem
-            {
-                Value = e.Id.ToString(),
-                Text = e.Nombre
-            }).ToList();
-
+            ViewBag.Empleados = await _empleadoRepositorio.GetAll();
+            ViewBag.TiposPrestamo = await _tipoPrestamoRepositorio.GetAll();
             return View();
         }
 
-        // Acción POST para crear un nuevo préstamo
+        // Acción para crear un préstamo (POST)
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Prestamo prestamo)
@@ -48,16 +47,12 @@ namespace TConsultigSA.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewBag.Empleados = (await _empleadoRepositorio.GetAll()).Select(e => new SelectListItem
-            {
-                Value = e.Id.ToString(),
-                Text = e.Nombre
-            }).ToList();
-
+            ViewBag.Empleados = await _empleadoRepositorio.GetAll();
+            ViewBag.TiposPrestamo = await _tipoPrestamoRepositorio.GetAll();
             return View(prestamo);
         }
 
-        // Mostrar formulario de edición
+        // Acción para editar un préstamo (GET)
         public async Task<IActionResult> Edit(int id)
         {
             var prestamo = await _prestamoRepositorio.GetById(id);
@@ -66,16 +61,12 @@ namespace TConsultigSA.Controllers
                 return NotFound();
             }
 
-            ViewBag.Empleados = (await _empleadoRepositorio.GetAll()).Select(e => new SelectListItem
-            {
-                Value = e.Id.ToString(),
-                Text = e.Nombre
-            }).ToList();
-
+            ViewBag.Empleados = await _empleadoRepositorio.GetAll();
+            ViewBag.TiposPrestamo = await _tipoPrestamoRepositorio.GetAll();
             return View(prestamo);
         }
 
-        // Acción POST para editar un préstamo existente
+        // Acción para editar un préstamo (POST)
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Prestamo prestamo)
@@ -91,16 +82,12 @@ namespace TConsultigSA.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewBag.Empleados = (await _empleadoRepositorio.GetAll()).Select(e => new SelectListItem
-            {
-                Value = e.Id.ToString(),
-                Text = e.Nombre
-            }).ToList();
-
+            ViewBag.Empleados = await _empleadoRepositorio.GetAll();
+            ViewBag.TiposPrestamo = await _tipoPrestamoRepositorio.GetAll();
             return View(prestamo);
         }
 
-        // Confirmar eliminación
+        // Acción para eliminar un préstamo (GET)
         public async Task<IActionResult> Delete(int id)
         {
             var prestamo = await _prestamoRepositorio.GetById(id);
@@ -111,6 +98,7 @@ namespace TConsultigSA.Controllers
             return View(prestamo);
         }
 
+        // Acción para confirmar la eliminación de un préstamo (POST)
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -120,3 +108,4 @@ namespace TConsultigSA.Controllers
         }
     }
 }
+    
