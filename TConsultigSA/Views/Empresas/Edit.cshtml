@@ -1,34 +1,44 @@
 ﻿@model TConsultigSA.Models.Empresa
 
-<h2>Editar Empresa</h2>
+<div class="d-flex">
+    <partial name="_Sidebar" /> <!-- Sidebar conservado -->
+    <!-- Contenido principal -->
+    <div id="page-content-wrapper" style="margin-left: 250px; padding: 20px; flex: 1; overflow-y: auto;">
+        <div class="container">
+            <h2 class="text-center text-danger mb-5">Editar Empresa</h2>
 
-<form asp-action="Edit" method="post">
-    <input type="hidden" asp-for="Id" />
+            <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="Id" />
 
-    <div class="form-group">
-        <label for="Nombre">Nombre de la Empresa</label>
-        <input asp-for="Nombre" class="form-control" />
-        <span asp-validation-for="Nombre" class="text-danger"></span>
+                <div class="form-group">
+                    <label for="Nombre">Nombre de la Empresa</label>
+                    <input asp-for="Nombre" class="form-control" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="Direccion">Dirección</label>
+                    <input asp-for="Direccion" class="form-control" />
+                    <span asp-validation-for="Direccion" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="Telefono">Teléfono</label>
+                    <input asp-for="Telefono" class="form-control" />
+                    <span asp-validation-for="Telefono" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </form>
+        </div>
     </div>
-
-    <div class="form-group">
-        <label for="Direccion">Dirección</label>
-        <input asp-for="Direccion" class="form-control" />
-        <span asp-validation-for="Direccion" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label for="Telefono">Teléfono</label>
-        <input asp-for="Telefono" class="form-control" />
-        <span asp-validation-for="Telefono" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label for="Email">Email</label>
-        <input asp-for="Email" class="form-control" />
-        <span asp-validation-for="Email" class="text-danger"></span>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Guardar</button>
-    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
-</form>
+</div>

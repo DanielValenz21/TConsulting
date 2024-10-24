@@ -20,6 +20,9 @@ builder.Services.AddScoped<IRolRepositorio, RolRepositorio>();
 builder.Services.AddScoped<IPermisoRepositorio, PermisoRepositorio>();
 builder.Services.AddScoped<IHorasTrabajoRepositorio, HorasTrabajoRepositorio>();
 builder.Services.AddScoped<EmpresaRepositorio>();
+builder.Services.AddScoped<PuestoRepositorio>();
+builder.Services.AddScoped<AusenciaRepositorio>();
+builder.Services.AddScoped<PrestamoRepositorio>(); // Registro para el servicio de préstamos
 
 // Configuración de autenticación con cookies
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)

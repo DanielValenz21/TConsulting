@@ -15,24 +15,53 @@ namespace TConsultigSA.Repositories
             _connectionString = configuration.GetConnectionString("DefaultConnection");
         }
 
+        // Obtener todos los puestos
         public async Task<IEnumerable<Puesto>> GetAll()
         {
             using (var connection = new SqlConnection(_connectionString))
             {
-                try
-                {
-                    var query = "SELECT * FROM Puestos";
-                    var result = await connection.QueryAsync<Puesto>(query);
-                    if (result == null)
-                    {
-                        throw new System.Exception("No se encontraron puestos.");
-                    }
-                    return result;
-                }
-                catch (System.Exception ex)
-                {
-                    throw new System.Exception("Error al ejecutar la consulta de puestos: " + ex.Message);
-                }
+                var query = "SELECT * FROM Puestos";
+                return await connection.QueryAsync<Puesto>(query);
+            }
+        }
+
+        // Obtener un puesto por ID
+        public async Task<Puesto> GetById(int id)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var query = "SELECT * FROM Puestos WHERE Id = @Id";
+                return await connection.QueryFirstOrDefaultAsync<Puesto>(query, new { Id = id });
+            }
+        }
+
+        // Insertar un nuevo puesto
+        public async Task<int> Add(Puesto puesto)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var query = "INSERT INTO Puestos (Descripcion) VALUES (@Descripcion)";
+                return await connection.ExecuteAsync(query, puesto);
+            }
+        }
+
+        // Actualizar un puesto existente
+        public async Task<int> Update(Puesto puesto)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var query = "UPDATE Puestos SET Descripcion = @Descripcion WHERE Id = @Id";
+                return await connection.ExecuteAsync(query, puesto);
+            }
+        }
+
+        // Eliminar un puesto
+        public async Task<int> Delete(int id)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var query = "DELETE FROM Puestos WHERE Id = @Id";
+                return await connection.ExecuteAsync(query, new { Id = id });
             }
         }
     }
