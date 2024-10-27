@@ -24,6 +24,7 @@ builder.Services.AddScoped<PuestoRepositorio>();
 builder.Services.AddScoped<AusenciaRepositorio>();
 builder.Services.AddScoped<PrestamoRepositorio>(); // Registro para el servicio de préstamos
 builder.Services.AddScoped<TipoPrestamoRepositorio>();    // Repositorio de tipos de préstamo
+builder.Services.AddScoped<TipoNominaRepositorio>();
 
 // Configuración de autenticación con cookies
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
