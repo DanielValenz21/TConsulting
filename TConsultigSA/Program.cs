@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using TConsultigSA.Repositories;
 using TConsultingSA.Repositories;
+using TConsultigSA.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,13 +19,14 @@ builder.Services.AddScoped<DepartamentoRepositorio>();
 builder.Services.AddScoped<UsuarioRepositorio>();
 builder.Services.AddScoped<IRolRepositorio, RolRepositorio>();
 builder.Services.AddScoped<IPermisoRepositorio, PermisoRepositorio>();
-builder.Services.AddScoped<IHorasTrabajoRepositorio, HorasTrabajoRepositorio>();
 builder.Services.AddScoped<EmpresaRepositorio>();
 builder.Services.AddScoped<PuestoRepositorio>();
 builder.Services.AddScoped<AusenciaRepositorio>();
 builder.Services.AddScoped<PrestamoRepositorio>(); // Registro para el servicio de préstamos
 builder.Services.AddScoped<TipoPrestamoRepositorio>();    // Repositorio de tipos de préstamo
 builder.Services.AddScoped<TipoNominaRepositorio>();
+builder.Services.AddScoped<NominaService>();
+builder.Services.AddScoped<IHorasTrabajoRepositorio, HorasTrabajoRepositorio>();
 
 // Configuración de autenticación con cookies
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)

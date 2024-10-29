@@ -13,8 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Servicios\" />
-    <Folder Include="Views\Nomina\" />
     <Folder Include="wwwroot\styles\layouts\" />
     <Folder Include="wwwroot\styles\base\" />
     <Folder Include="wwwroot\styles\pages\" />
