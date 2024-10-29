@@ -58,7 +58,14 @@
             <div class="row mt-3">
                 <div class="col-12 text-left">
                     <a asp-action="CalcularNomina" class="btn btn-primary">Calcular otra Nómina</a>
+
                 </div>
+                                    <form asp-action="GenerarReciboNomina" method="post">
+    <input type="hidden" name="IdEmpleado" value="@Model.IdEmpleado" />
+    <input type="hidden" name="Mes" value="@Model.Mes" />
+    <input type="hidden" name="Año" value="@Model.Año" />
+    <button type="submit" class="btn btn-primary">Descargar Recibo en PDF</button>
+</form>
             </div>
         </div>
 

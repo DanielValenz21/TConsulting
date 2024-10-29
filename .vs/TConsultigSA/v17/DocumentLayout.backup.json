@@ -3,40 +3,32 @@
   "WorkspaceRootPath": "C:\\Repositorio\\ASP.net\\TConsulting\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\views\\nomina\\resultadonomina.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\views\\nomina\\resultadonomina.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\views\\nomina\\recibonominapdf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\views\\nomina\\recibonominapdf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\repositories\\horastrabajorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\repositories\\horastrabajorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\controllers\\nominacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\controllers\\nominacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\views\\nomina\\calcularnomina.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\views\\nomina\\calcularnomina.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\views\\empleados\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\views\\empleados\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\servicios\\nominaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\servicios\\nominaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\repositories\\prestamorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\repositories\\prestamorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\repositories\\ausenciarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\repositories\\ausenciarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\views\\nomina\\resultadonomina.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\views\\nomina\\resultadonomina.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\repositories\\horastrabajorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\repositories\\horastrabajorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\servicios\\nominaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|solutionrelative:tconsultigsa\\servicios\\nominaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AEB189C0-7332-432D-BD07-87D69BF9FB18}|TConsultigSA\\TConsultingSA.csproj|c:\\repositorio\\asp.net\\tconsulting\\tconsultigsa\\models\\n\u00F3mina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,132 +74,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ResultadoNomina.cshtml",
-              "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Views\\Nomina\\ResultadoNomina.cshtml",
-              "RelativeDocumentMoniker": "TConsultigSA\\Views\\Nomina\\ResultadoNomina.cshtml",
-              "ToolTip": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Views\\Nomina\\ResultadoNomina.cshtml",
-              "RelativeToolTip": "TConsultigSA\\Views\\Nomina\\ResultadoNomina.cshtml",
-              "ViewState": "AgIAACsAAAAAAAAAAAAYwEIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-29T05:19:27.068Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Views\\Empleados\\Index.cshtml",
-              "RelativeDocumentMoniker": "TConsultigSA\\Views\\Empleados\\Index.cshtml",
-              "ToolTip": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Views\\Empleados\\Index.cshtml",
-              "RelativeToolTip": "TConsultigSA\\Views\\Empleados\\Index.cshtml",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAYwEgAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-29T05:16:41.865Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CalcularNomina.cshtml",
-              "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Views\\Nomina\\CalcularNomina.cshtml",
-              "RelativeDocumentMoniker": "TConsultigSA\\Views\\Nomina\\CalcularNomina.cshtml",
-              "ToolTip": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Views\\Nomina\\CalcularNomina.cshtml",
-              "RelativeToolTip": "TConsultigSA\\Views\\Nomina\\CalcularNomina.cshtml",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAUwBMAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-29T05:11:52.906Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "PrestamoRepositorio.cs",
               "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Repositories\\PrestamoRepositorio.cs",
               "RelativeDocumentMoniker": "TConsultigSA\\Repositories\\PrestamoRepositorio.cs",
               "ToolTip": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Repositories\\PrestamoRepositorio.cs",
               "RelativeToolTip": "TConsultigSA\\Repositories\\PrestamoRepositorio.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T05:09:55.345Z",
+              "WhenOpened": "2024-10-29T20:30:11.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AusenciaRepositorio.cs",
-              "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Repositories\\AusenciaRepositorio.cs",
-              "RelativeDocumentMoniker": "TConsultigSA\\Repositories\\AusenciaRepositorio.cs",
-              "ToolTip": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Repositories\\AusenciaRepositorio.cs",
-              "RelativeToolTip": "TConsultigSA\\Repositories\\AusenciaRepositorio.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T05:09:40.361Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "HorasTrabajoRepositorio.cs",
               "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Repositories\\HorasTrabajoRepositorio.cs",
               "RelativeDocumentMoniker": "TConsultigSA\\Repositories\\HorasTrabajoRepositorio.cs",
               "ToolTip": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Repositories\\HorasTrabajoRepositorio.cs",
               "RelativeToolTip": "TConsultigSA\\Repositories\\HorasTrabajoRepositorio.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBEAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowBEAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T05:09:21.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "N\u00F3mina.cs",
-              "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Models\\N\u00F3mina.cs",
-              "RelativeDocumentMoniker": "TConsultigSA\\Models\\N\u00F3mina.cs",
-              "ToolTip": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Models\\N\u00F3mina.cs",
-              "RelativeToolTip": "TConsultigSA\\Models\\N\u00F3mina.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA1wBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T05:08:44.224Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Program.cs",
-              "RelativeDocumentMoniker": "TConsultigSA\\Program.cs",
-              "ToolTip": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Program.cs",
-              "RelativeToolTip": "TConsultigSA\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAWwDgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T04:39:23.998Z",
+              "WhenOpened": "2024-10-29T20:29:30.787Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "NominaController.cs",
-              "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Controllers\\NominaController.cs",
-              "RelativeDocumentMoniker": "TConsultigSA\\Controllers\\NominaController.cs",
-              "ToolTip": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Controllers\\NominaController.cs",
-              "RelativeToolTip": "TConsultigSA\\Controllers\\NominaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T04:19:22.555Z",
+              "Title": "ReciboNominaPDF.cshtml",
+              "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Views\\Nomina\\ReciboNominaPDF.cshtml",
+              "RelativeDocumentMoniker": "TConsultigSA\\Views\\Nomina\\ReciboNominaPDF.cshtml",
+              "ToolTip": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Views\\Nomina\\ReciboNominaPDF.cshtml*",
+              "RelativeToolTip": "TConsultigSA\\Views\\Nomina\\ReciboNominaPDF.cshtml*",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAwFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-29T20:29:05.47Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "ResultadoNomina.cshtml",
+              "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Views\\Nomina\\ResultadoNomina.cshtml",
+              "RelativeDocumentMoniker": "TConsultigSA\\Views\\Nomina\\ResultadoNomina.cshtml",
+              "ToolTip": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Views\\Nomina\\ResultadoNomina.cshtml",
+              "RelativeToolTip": "TConsultigSA\\Views\\Nomina\\ResultadoNomina.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-29T20:25:14.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Program.cs",
+              "RelativeDocumentMoniker": "TConsultigSA\\Program.cs",
+              "ToolTip": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Program.cs",
+              "RelativeToolTip": "TConsultigSA\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T19:17:49.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "NominaService.cs",
               "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\servicios\\NominaService.cs",
               "RelativeDocumentMoniker": "TConsultigSA\\servicios\\NominaService.cs",
               "ToolTip": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\servicios\\NominaService.cs",
               "RelativeToolTip": "TConsultigSA\\servicios\\NominaService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAIwBcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T04:19:02.67Z",
+              "WhenOpened": "2024-10-29T19:16:15.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NominaController.cs",
+              "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Controllers\\NominaController.cs",
+              "RelativeDocumentMoniker": "TConsultigSA\\Controllers\\NominaController.cs",
+              "ToolTip": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Controllers\\NominaController.cs",
+              "RelativeToolTip": "TConsultigSA\\Controllers\\NominaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T19:12:53.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "N\u00F3mina.cs",
+              "DocumentMoniker": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Models\\N\u00F3mina.cs",
+              "RelativeDocumentMoniker": "TConsultigSA\\Models\\N\u00F3mina.cs",
+              "ToolTip": "C:\\Repositorio\\ASP.net\\TConsulting\\TConsultigSA\\Models\\N\u00F3mina.cs",
+              "RelativeToolTip": "TConsultigSA\\Models\\N\u00F3mina.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T19:12:25.337Z",
               "EditorCaption": ""
             }
           ]

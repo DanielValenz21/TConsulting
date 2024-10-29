@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using TConsultigSA.Repositories;
 using TConsultingSA.Repositories;
 using TConsultigSA.Services;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Mvc.ViewEngines;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +29,9 @@ builder.Services.AddScoped<TipoPrestamoRepositorio>();    // Repositorio de tipo
 builder.Services.AddScoped<TipoNominaRepositorio>();
 builder.Services.AddScoped<NominaService>();
 builder.Services.AddScoped<IHorasTrabajoRepositorio, HorasTrabajoRepositorio>();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+builder.Services.AddSingleton<ICompositeViewEngine, CompositeViewEngine>();
 
 // Configuración de autenticación con cookies
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
