@@ -32,6 +32,7 @@ builder.Services.AddScoped<IHorasTrabajoRepositorio, HorasTrabajoRepositorio>();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
 builder.Services.AddSingleton<ICompositeViewEngine, CompositeViewEngine>();
+builder.Services.AddScoped<HistorialAumentoRepositorio>();
 
 // Configuración de autenticación con cookies
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
