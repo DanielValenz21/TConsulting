@@ -10,7 +10,7 @@ namespace TConsultigSA.Repositories
 
         public UsuarioRepositorio(IConfiguration configuration)
         {
-            _connectionString = configuration.GetConnectionString("DefaultConnection");
+            _connectionString = configuration.GetConnectionString("MyDatabaseConnection");
         }
 
         public async Task<Usuario> ObtenerPorNombre(string nombre)

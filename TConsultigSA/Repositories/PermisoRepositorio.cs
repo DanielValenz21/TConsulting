@@ -12,7 +12,7 @@ namespace TConsultigSA.Repositories
 
         public PermisoRepositorio(IConfiguration configuration)
         {
-            _connectionString = configuration.GetConnectionString("DefaultConnection");
+            _connectionString = configuration.GetConnectionString("MyDatabaseConnection");
         }
 
         public async Task<IEnumerable<Permiso>> GetAll()

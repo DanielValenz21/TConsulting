@@ -12,7 +12,7 @@ namespace TConsultigSA.Repositories
 
         public DepartamentoRepositorio(IConfiguration configuration)
         {
-            _connectionString = configuration.GetConnectionString("DefaultConnection");
+            _connectionString = configuration.GetConnectionString("MyDatabaseConnection");
         }
 
         // Obtener todos los departamentos

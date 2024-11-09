@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "mssql2": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/TConsultingSA20241031001430/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsMyDatabaseConnection_817728A27D",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/tconsultingsadbserver/databases/TConsultingSA_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:MyDatabaseConnection"
+    }
+  }
+}

@@ -6,7 +6,7 @@
     <WebStackScaffolding_ViewDialogWidth>650</WebStackScaffolding_ViewDialogWidth>
     <Controller_SelectedScaffolderID>MvcControllerWithActionsScaffolder</Controller_SelectedScaffolderID>
     <Controller_SelectedScaffolderCategoryPath>root/Common/MVC/Controller</Controller_SelectedScaffolderCategoryPath>
-    <NameOfLastUsedPublishProfile>C:\Users\lucy_\Source\Repos\TConsulting\TConsultigSA\Properties\PublishProfiles\IISProfile.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>C:\Repositorio\ASP.net\TConsulting\TConsultigSA\Properties\PublishProfiles\TConsultingSA20241031001430 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
     <ActiveDebugProfile>TConsultigSA</ActiveDebugProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
